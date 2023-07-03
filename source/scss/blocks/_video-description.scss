@@ -1,0 +1,43 @@
+.video-description {
+  background-color: rgba(var(--bg-g),1.0);
+
+  --offset: Min(8.871vw, 110px);
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    gap: Min(7.661vw, 95px);
+    align-items: center;
+
+    @include tablet {
+      gap: 5vw;
+    }
+
+    @include mobile {
+      grid-template-columns: 100%;
+      gap: 0;
+    }
+  }
+
+  &__content {
+    padding: 60px 0 30px;
+  }
+
+  .video-box {
+    height: 100%;
+    margin-right: calc(var(--offset) * -1);
+    border-radius: 0;
+
+    @include tablet {
+      margin-right: -15px;
+    }
+
+    @include mobile {
+      margin-left: -15px;
+      max-height: Min(89.867vw, 337px);
+    }
+
+  }
+
+
+}

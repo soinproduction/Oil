@@ -1,0 +1,40 @@
+.about-description {
+
+  &__box {
+    padding-top: clamp(60px, 10.081vw, 125px);
+    padding-bottom: clamp(40px, 10.081vw, 125px);
+
+    @include small-tablet {
+      padding-bottom: clamp(40px, 8.081vw, 125px);
+    }
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  }
+
+
+
+  .video-box {
+    float: left;
+    width: 45%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 clamp(20px, 3.418vw, 63px) Min(0.781vw, 10px) 0;
+    height: initial;
+
+    @include mobile {
+      width: 100%;
+      float: none;
+      margin: 0;
+      order: 2;
+    }
+  }
+
+
+
+}

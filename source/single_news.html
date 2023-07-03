@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang='En'>
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="news.html">Our News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class='single-news'>
+      <div class="single-news__image">
+        <picture>
+          <source type='image/webp' srcset='img/news/news_long.webp'>
+          <img loading='lazy' width='1920' height='471' src='img/news/news_long.png' alt='image'>
+        </picture>
+      </div>
+      <div class="container">
+        <article class="single-news__article">
+            <div class="single-news__head">
+              <time class='time' data-time='03-18-2022'>
+                <svg width='18' height='17'>
+                  <use href='img/sprite/sprite.svg#calendar'></use>
+                </svg>
+                18.03.2022
+              </time>
+              <h2 class='main-subtitle single-news__title'>Lorem Ipsum is simply dummy text of the printing</h2>
+            </div>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <picture class='big'>
+              <source type='image/webp' srcset='img/news/news_big.webp'>
+              <img loading='lazy' width='835' height='465' src='img/news/news_big.png' alt='image'>
+            </picture>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+            <picture class='big'>
+              <source type='image/webp' srcset='img/news/news_big.webp'>
+              <img loading='lazy' width='835' height='465' src='img/news/news_big.png' alt='image'>
+            </picture>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+        </article>
+      </div>
+    </section>
+
+    <section class='news-section'>
+      <div class="container">
+        <div class="news-section__box">
+          <div class='main-top'>
+            <h2 class='main-subtitle news-section__title'>
+              Our News
+            </h2>
+            <p>
+              Don't miss the most interesting news
+            </p>
+          </div>
+
+          <div class='cards-slider'>
+            <button class='slider-button cards-slider__prev'>
+              <svg width='15' height='15'>
+                <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+
+            <div class='news-slider swiper-container'>
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <a href='single_news.html' class='news-card'>
+                    <div class='news-card__image'>
+                      <picture>
+                        <source type='image/webp' srcset='img/news/img.webp'>
+                        <img loading='lazy' width='345' height='282' src='img/news/img.png' alt='image'>
+                      </picture>
+                    </div>
+                    <div class='news-card__descr'>
+
+                     <time class='time' data-time='03-18-2022'>
+                       <svg width='18' height='17'>
+                         <use href='img/sprite/sprite.svg#calendar'></use>
+                       </svg>
+                       18.03.2022
+                     </time>
+
+                      <h3 class='news-card__title'>
+                       Lorem Ipsum is simply dummy text of the printing
+                      </h3>
+                      <span class='news-card__subtitle'>
+                        Lorem Ipsum is simply dummy text of the printing and typesetti. Lorem Ipsum has been
+                        the printing and typesetti. Lorem Ipsum has been
+                      </span>
+
+                      <span class='news-card__more read-more'>
+                       Read more
+                       <svg width='10' height='10'>
+                         <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                       </svg>
+                     </span>
+                    </div>
+
+                  </a>
+                </li>
+                <li class='swiper-slide'>
+                 <a href='single_news.html' class='news-card'>
+                   <div class='news-card__image'>
+                     <picture>
+                       <source type='image/webp' srcset='img/news/img.webp'>
+                       <img loading='lazy' width='345' height='282' src='img/news/img.png' alt='image'>
+                     </picture>
+                   </div>
+                   <div class='news-card__descr'>
+
+                    <time class='time' data-time='03-18-2022'>
+                      <svg width='18' height='17'>
+                        <use href='img/sprite/sprite.svg#calendar'></use>
+                      </svg>
+                      18.03.2022
+                    </time>
+
+                     <h3 class='news-card__title'>
+                      Lorem Ipsum is simply dummy text of the printing
+                     </h3>
+                     <span class='news-card__subtitle'>
+                       Lorem Ipsum is simply dummy text of the printing
+                     </span>
+
+                     <span class='news-card__more read-more'>
+                      Read more
+                      <svg width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                      </svg>
+                    </span>
+                   </div>
+
+                 </a>
+               </li>
+               <li class='swiper-slide'>
+                 <a href='single_news.html' class='news-card'>
+                   <div class='news-card__image'>
+                     <picture>
+                       <source type='image/webp' srcset='img/news/img.webp'>
+                       <img loading='lazy' width='345' height='282' src='img/news/img.png' alt='image'>
+                     </picture>
+                   </div>
+                   <div class='news-card__descr'>
+
+                    <time class='time' data-time='03-18-2022'>
+                      <svg width='18' height='17'>
+                        <use href='img/sprite/sprite.svg#calendar'></use>
+                      </svg>
+                      18.03.2022
+                    </time>
+
+                     <h3 class='news-card__title'>
+                      Lorem Ipsum is simply dummy text of the printing
+                     </h3>
+                     <span class='news-card__subtitle'>
+                       Lorem Ipsum is simply dummy text of the printing
+                     </span>
+
+                     <span class='news-card__more read-more'>
+                      Read more
+                      <svg width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                      </svg>
+                    </span>
+                   </div>
+
+                 </a>
+               </li>
+              </ul>
+            </div>
+
+            <button class='slider-button cards-slider__next'>
+              <svg width='15' height='15'>
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </button>
+
+            <span class='cards-slider__pagination swiper-pagination'></span>
+          </div>
+
+          <a href='news.html' class='main-button transparent news-section__btn'>
+            More News
+            <svg width='10' height='10'>
+              <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src='js/main.js'></script>
+
+</html>
+
+

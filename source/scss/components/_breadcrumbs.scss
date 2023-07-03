@@ -1,0 +1,37 @@
+.breadcrumbs {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--br-a);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__item {
+    color: rgba(var(--cl-d),1.0);
+    font-size: clamp(12px, 2.899vw, 14px);
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+
+    &:not(:last-child) {
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &::after {
+          content: '/';
+        }
+      }
+    }
+
+    &:last-child * {
+      color: rgba(var(--cl-c),1.0);
+      pointer-events: none;
+    }
+  }
+}

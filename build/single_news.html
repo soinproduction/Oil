@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang='En'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta name='Description' content='FlavOil dev'>
+    <!-- <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'> -->
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>FlavOil</title>
+
+    <link rel='preload' href='fonts/Inter-Regular.woff' as='font' crossorigin='anonymous'>
+    <link rel='preload' href='fonts/Inter-Medium.woff' as='font' crossorigin='anonymous'>
+    <link rel='preload' href='fonts/Inter-SemiBold.woff' as='font' crossorigin='anonymous'>
+    <link rel='preload' href='fonts/Inter-Bold.woff' as='font' crossorigin='anonymous'>
+    <link rel='preload' href='fonts/HeliosBlackC.woff' as='font' crossorigin='anonymous'>
+    <link rel='preload' href='fonts/HeliosBlackC-Italic.woff' as='font' crossorigin='anonymous'>
+
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+
+<body>
+  <header class='header'>
+  <div class='header-top'>
+    <div class='container'>
+      <div class='header-top__inner'>
+        <ul class='header__contacts'>
+          <li class='header__contacts-item'>
+            <a href='#' class='header__contacts-link'>
+              <svg width='12' height='12'>
+                <use href='img/sprite/sprite.svg#geo'></use>
+              </svg>
+              128 City Road, London EC1V 2NX United Kingdom
+            </a>
+          </li>
+          <li class='header__contacts-item'>
+            <a href='mailto:info@flavoil.co.uk' class='header__contacts-link'>
+              <svg width='12' height='12'>
+                <use href='img/sprite/sprite.svg#email'></use>
+              </svg>
+              info@flavoil.co.uk
+            </a>
+          </li>
+        </ul>
+
+        <div class="main-contacts">
+          <span class="main-contacts__label">
+            Contact Us:
+          </span>
+
+          <ul class="main-contacts__list">
+            <li class="main-contacts__item">
+              <a href="#" class="main-contacts__link">
+                <img width='21' height='21' src="img/sprite/twitter.svg" alt="twitter">
+              </a>
+            </li>
+            <li class="main-contacts__item">
+              <a href="#" class="main-contacts__link">
+                <img width='21' height='21' src="img/sprite/instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="main-contacts__item">
+              <a href="#" class="main-contacts__link">
+                <img width='21' height='21' src="img/sprite/facebook.svg" alt="facebook">
+              </a>
+            </li>
+            <li class="main-contacts__item">
+              <a href="#" class="main-contacts__link">
+                <img width='21' height='21' src="img/sprite/whatsapp.svg" alt="whatsapp">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class='header-bottom'>
+    <div class='container'>
+      <div class='header-bottom__inner'>
+
+          <button class='burger'>
+            <span class="burger__line"></span>
+          </button>
+
+          <div class="header-bottom__logo">
+            <a href="/" class="logo">
+              <svg width='97' height='47'>
+                <use href='img/sprite/sprite.svg#logo'></use>
+              </svg>
+            </a>
+          </div>
+
+
+          <nav class="mobile-menu main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="/" class="main-nav__link active">
+                  Home
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="products.html" class="main-nav__link">
+                  Products
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="about.html" class="main-nav__link">
+                  About Us
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="news.html" class="main-nav__link">
+                  News
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contacts.html" class="main-nav__link">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <a href="#">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#geo'></use>
+                  </svg>
+                  128 City Road, London EC1V 2NX United Kingdom
+                </a>
+              </li>
+              <li class="contact-list__item">
+                <a href="mailto:info@flavoil.co.uk">
+                  <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#email'></use>
+                  </svg>
+                  info@flavoil.co.uk
+                </a>
+              </li>
+            </ul>
+
+            <div class="main-contacts main-contacts--mode">
+              <span class="main-contacts__label">
+                Write to us:
+              </span>
+
+              <ul class="main-contacts__list">
+
+                <li class="main-contacts__item">
+                  <a href="#" class="main-contacts__link">
+                    <img width='33' height='33' src="img/sprite/instagram.svg" alt="instagram">
+                  </a>
+                </li>
+                <li class="main-contacts__item">
+                  <a href="#" class="main-contacts__link">
+                    <img width='33' height='33' src="img/sprite/whatsapp.svg" alt="whatsapp">
+                  </a>
+                </li>
+                <li class="main-contacts__item">
+                  <a href="#" class="main-contacts__link">
+                    <img width='33' height='33' src="img/sprite/facebook.svg" alt="facebook">
+                  </a>
+                </li>
+                <li class="main-contacts__item">
+                  <a href="#" class="main-contacts__link">
+                    <img width='33' height='33' src="img/sprite/twitter.svg" alt="twitter">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </nav>
+
+          <div class="main-phone">
+            <svg width='35' height='35'>
+              <use href='img/sprite/sprite.svg#whatsapp-big'></use>
+            </svg>
+            <a href="tel:+4402071382077" class="main-phone__link">+44 (0) 207 1382 077</a>
+            <a href="#" class="main-phone__write">Write to whatsapp</a>
+          </div>
+
+          <!-- в макете есть 2 варианта (написать в wtsp и и обратный звонок) -->
+          <!-- <div class="main-phone">
+            <svg width='35' height='35'>
+              <use href='img/sprite/sprite.svg#headphones'></use>
+            </svg>
+            <a href="tel:+4402071382077" class="main-phone__link">+44 (0) 207 1382 077</a>
+            <a href="#" class="main-phone__write">Сall me back</a>
+          </div> -->
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="news.html">Our News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class='single-news'>
+      <div class="single-news__image">
+        <picture>
+          <source type='image/webp' srcset='img/news/news_long.webp'>
+          <img loading='lazy' width='1920' height='471' src='img/news/news_long.png' alt='image'>
+        </picture>
+      </div>
+      <div class="container">
+        <article class="single-news__article">
+            <div class="single-news__head">
+              <time class='time' data-time='03-18-2022'>
+                <svg width='18' height='17'>
+                  <use href='img/sprite/sprite.svg#calendar'></use>
+                </svg>
+                18.03.2022
+              </time>
+              <h2 class='main-subtitle single-news__title'>Lorem Ipsum is simply dummy text of the printing</h2>
+            </div>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <picture class='big'>
+              <source type='image/webp' srcset='img/news/news_big.webp'>
+              <img loading='lazy' width='835' height='465' src='img/news/news_big.png' alt='image'>
+            </picture>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+            <picture>
+              <source type='image/webp' srcset='img/news/img.webp'>
+              <img loading='lazy' width='413' height='307' src='img/news/img.png' alt='image'>
+            </picture>
+            <picture class='big'>
+              <source type='image/webp' srcset='img/news/news_big.webp'>
+              <img loading='lazy' width='835' height='465' src='img/news/news_big.png' alt='image'>
+            </picture>
+
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+        </article>
+      </div>
+    </section>
+
+    <section class='news-section'>
+      <div class="container">
+        <div class="news-section__box">
+          <div class='main-top'>
+            <h2 class='main-subtitle news-section__title'>
+              Our News
+            </h2>
+            <p>
+              Don't miss the most interesting news
+            </p>
+          </div>
+
+          <div class='cards-slider'>
+            <button class='slider-button cards-slider__prev'>
+              <svg width='15' height='15'>
+                <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+
+            <div class='news-slider swiper-container'>
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <a href='single_news.html' class='news-card'>
+                    <div class='news-card__image'>
+                      <picture>
+                        <source type='image/webp' srcset='img/news/img.webp'>
+                        <img loading='lazy' width='345' height='282' src='img/news/img.png' alt='image'>
+                      </picture>
+                    </div>
+                    <div class='news-card__descr'>
+
+                     <time class='time' data-time='03-18-2022'>
+                       <svg width='18' height='17'>
+                         <use href='img/sprite/sprite.svg#calendar'></use>
+                       </svg>
+                       18.03.2022
+                     </time>
+
+                      <h3 class='news-card__title'>
+                       Lorem Ipsum is simply dummy text of the printing
+                      </h3>
+                      <span class='news-card__subtitle'>
+                        Lorem Ipsum is simply dummy text of the printing and typesetti. Lorem Ipsum has been
+                        the printing and typesetti. Lorem Ipsum has been
+                      </span>
+
+                      <span class='news-card__more read-more'>
+                       Read more
+                       <svg width='10' height='10'>
+                         <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                       </svg>
+                     </span>
+                    </div>
+
+                  </a>
+                </li>
+                <li class='swiper-slide'>
+                 <a href='single_news.html' class='news-card'>
+                   <div class='news-card__image'>
+                     <picture>
+                       <source type='image/webp' srcset='img/news/img.webp'>
+                       <img loading='lazy' width='345' height='282' src='img/news/img.png' alt='image'>
+                     </picture>
+                   </div>
+                   <div class='news-card__descr'>
+
+                    <time class='time' data-time='03-18-2022'>
+                      <svg width='18' height='17'>
+                        <use href='img/sprite/sprite.svg#calendar'></use>
+                      </svg>
+                      18.03.2022
+                    </time>
+
+                     <h3 class='news-card__title'>
+                      Lorem Ipsum is simply dummy text of the printing
+                     </h3>
+                     <span class='news-card__subtitle'>
+                       Lorem Ipsum is simply dummy text of the printing
+                     </span>
+
+                     <span class='news-card__more read-more'>
+                      Read more
+                      <svg width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                      </svg>
+                    </span>
+                   </div>
+
+                 </a>
+               </li>
+               <li class='swiper-slide'>
+                 <a href='single_news.html' class='news-card'>
+                   <div class='news-card__image'>
+                     <picture>
+                       <source type='image/webp' srcset='img/news/img.webp'>
+                       <img loading='lazy' width='345' height='282' src='img/news/img.png' alt='image'>
+                     </picture>
+                   </div>
+                   <div class='news-card__descr'>
+
+                    <time class='time' data-time='03-18-2022'>
+                      <svg width='18' height='17'>
+                        <use href='img/sprite/sprite.svg#calendar'></use>
+                      </svg>
+                      18.03.2022
+                    </time>
+
+                     <h3 class='news-card__title'>
+                      Lorem Ipsum is simply dummy text of the printing
+                     </h3>
+                     <span class='news-card__subtitle'>
+                       Lorem Ipsum is simply dummy text of the printing
+                     </span>
+
+                     <span class='news-card__more read-more'>
+                      Read more
+                      <svg width='10' height='10'>
+                        <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                      </svg>
+                    </span>
+                   </div>
+
+                 </a>
+               </li>
+              </ul>
+            </div>
+
+            <button class='slider-button cards-slider__next'>
+              <svg width='15' height='15'>
+                <use href='img/sprite/sprite.svg#arrow-right'></use>
+              </svg>
+            </button>
+
+            <span class='cards-slider__pagination swiper-pagination'></span>
+          </div>
+
+          <a href='news.html' class='main-button transparent news-section__btn'>
+            More News
+            <svg width='10' height='10'>
+              <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+            </svg>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+  <div class='container'>
+    <div class='footer'>
+      <div class="footer__row">
+        <a href="/" class="logo">
+          <svg width='134' height='60'>
+            <use href='img/sprite/sprite.svg#logo'></use>
+          </svg>
+        </a>
+
+        <nav class="main-nav footer__nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="/" class="main-nav__link">
+                Home
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="products.html" class="main-nav__link">
+                Products
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="about.html" class="main-nav__link">
+                About Us
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="news.html" class="main-nav__link">
+                News
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="contacts.html" class="main-nav__link">
+                Contacts
+              </a>
+            </li>
+            <li class="main-nav__item hidden-desktop">
+              <a href="privacy.html" class="main-nav__link">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="main-nav__item hidden-desktop">
+              <a href="terms.html" class="main-nav__link">
+                Terms And Conditions
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href='#' class='main-button footer__btn'>
+          Our Products
+          <svg width='10' height='10'>
+            <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__row">
+        <span class='footer__rights'>
+          © 2023. All rights reserved.
+        </span>
+
+        <ui class="footer__list">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms And Conditions</a></li>
+        </ui>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <div class='overlay' data-overlay></div>
+
+</body>
+<script src='js/main.js'></script>
+
+</html>
+
+

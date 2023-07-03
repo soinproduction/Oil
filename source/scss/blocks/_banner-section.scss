@@ -1,0 +1,70 @@
+.banner-section {
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @include small-tablet {
+    background-position: bottom;
+  }
+
+
+  &__image {
+    display: flex;
+    width: 100%;
+    align-self: flex-end;
+    max-width: 530px;
+
+    img, picture {
+      width: 100%;
+    }
+
+    @include small-tablet {
+      max-width: 80vw;
+      margin: 0 auto;
+    }
+  }
+
+  &__box {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content: space-between;
+    gap: 0 40px;
+    align-items: center;
+
+    @include tablet {
+      gap: 0 20px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+      max-width: 576px;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include small-tablet {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    max-width: 220px;
+
+    @include ios {
+      max-width: 100%;
+    }
+  }
+}

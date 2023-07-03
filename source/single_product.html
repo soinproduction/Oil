@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang='En'>
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="products.html">Products</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="single_product.html">Hight Oleic Cooking Oil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class='product' style='background-image: url(img/singleBg.png);'>
+      <div class="container">
+        <div class="product__inner">
+          <div class="product__descr">
+            <h2 class="main-subtitle">
+              High Oleic Cooking Oil
+            </h2>
+
+            <p>
+              Hight Oleic Cooking Oil is the Ultimate frying oil. It is very resistant to breakdown
+              and is the healthiest frying oil available. Everyone is switching to this oil. Our unique
+              Bag-in-box is an environmentally sound storage solution that folds completely flat after use. It is an optimum space saver and light enough for any staff to use.
+            </p>
+
+          </div>
+
+          <div class="product-sliders">
+            <div class='thumb-slider'>
+              <button class='thumb-slider__next thumb-slider__btn'>
+                <svg width='18' height='10'>
+                  <use href='img/sprite/sprite.svg#arrow-left'></use>
+                </svg>
+              </button>
+              <div class='swiper-container'>
+                <ul class='swiper-wrapper'>
+                  <li class='swiper-slide'>
+                    <picture>
+                      <source type='image/webp' srcset='img/products/img.webp'>
+                      <img loading='lazy' width='27' height='83' src='img/products/img.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide'>
+                    <picture>
+                      <source type='image/webp' srcset='img/products/img2.webp'>
+                      <img loading='lazy' width='39' height='70' src='img/products/img2.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide'>
+                    <picture>
+                      <source type='image/webp' srcset='img/products/img.webp'>
+                      <img loading='lazy' width='27' height='83' src='img/products/img.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide'>
+                    <picture>
+                      <source type='image/webp' srcset='img/products/img2.webp'>
+                      <img loading='lazy' width='39' height='70' src='img/products/img2.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide'>
+                    <picture>
+                      <source type='image/webp' srcset='img/products/img2.webp'>
+                      <img loading='lazy' width='39' height='70' src='img/products/img2.png' alt='image'>
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+
+              <button class='thumb-slider__prev thumb-slider__btn'>
+                <svg width='18' height='10'>
+                  <use href='img/sprite/sprite.svg#arrow-right'></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="product-slider">
+              <div class='swiper-container'>
+                <ul class='swiper-wrapper' data-products-gallery>
+                  <li class='swiper-slide' data-src="img/product.png">
+                    <picture>
+                      <source type='image/webp' srcset='img/product.webp'>
+                      <img loading='lazy' width='349' height='349' src='img/product.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide' data-src="img/product.png">
+                    <picture>
+                      <source type='image/webp' srcset='img/product.webp'>
+                      <img loading='lazy' width='349' height='349' src='img/product.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide' data-src="img/product.png">
+                    <picture>
+                      <source type='image/webp' srcset='img/product.webp'>
+                      <img loading='lazy' width='349' height='349' src='img/product.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide' data-src="img/product.png">
+                    <picture>
+                      <source type='image/webp' srcset='img/product.webp'>
+                      <img loading='lazy' width='349' height='349' src='img/product.png' alt='image'>
+                    </picture>
+                  </li>
+                  <li class='swiper-slide' data-src="img/product.png">
+                    <picture>
+                      <source type='image/webp' srcset='img/product.webp'>
+                      <img loading='lazy' width='349' height='349' src='img/product.png' alt='image'>
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="product__info">
+            <ul class="product__info-list">
+              <li class="product__info-item">
+                <span class="product__info-legend">
+                  Ingredients
+                </span>
+                <span class="product__info-descr">
+                  refined and deodrized hight oleic sunflower oil
+                </span>
+              </li>
+              <li class="product__info-item">
+                <span class="product__info-legend">
+                  Nutrition
+                </span>
+                <ul class="nutrition-table">
+                  <li class="nutrition-table__coll">
+                    <span class="nutrition-table__name">Typical values</span>
+                    <span class="nutrition-table__value">per 100 ml</span>
+                  </li>
+                  <li class="nutrition-table__coll">
+                    <span class="nutrition-table__name">Energy</span>
+                    <span class="nutrition-table__value">3425 kj</span>
+                  </li>
+                  <li class="nutrition-table__coll">
+                    <span class="nutrition-table__name">Energy</span>
+                    <span class="nutrition-table__value">825 kcal</span>
+                  </li>
+                  <li class="nutrition-table__coll">
+                    <span class="nutrition-table__name">Fat</span>
+                    <span class="nutrition-table__value">95 g</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="product__info-item">
+                <span class="product__info-legend">
+                  Number of liters
+                </span>
+                <ul class='check-list'>
+                  <li class="check-list__item">
+                    20 litre Jerrycan
+                  </li>
+                  <li class="check-list__item">
+                    15 litre Bag in Box
+                  </li>
+                  <li class="check-list__item">
+                    10 litre Bag in Box
+                  </li>
+                  <li class="check-list__item">
+                    5 litre PET
+                  </li>
+                  <li class="check-list__item">
+                    3 litre PET A
+                  </li>
+                  <li class="check-list__item">
+                    850 ml PET
+                  </li>
+                  <li class="check-list__item">
+                    1000 litre IBC
+                  </li>
+                  <li class="check-list__item">
+                    Flexitank (21.5-24t)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="product__buttons">
+            <a href="contacts.html" class='main-button'>
+              Contact Us
+             <svg width='10' height='10'>
+               <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+             </svg>
+            </a>
+            <a href="#" class='main-button transparent'>
+              Buy on Amazon
+             <svg width='10' height='10'>
+               <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+             </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='our-section padding-mode'>
+      <div class='container'>
+         <div class='our-section__box'>
+           <div class='main-top'>
+             <h2 class='main-subtitle our-section__title'>
+              Other Products
+             </h2>
+             <p>
+              Different variants to match your cuisine, a lighter way to cook
+             </p>
+           </div>
+
+           <div class='cards-slider'>
+             <button class='slider-button cards-slider__prev'>
+               <svg width='15' height='15'>
+                 <use href='img/sprite/sprite.svg#arrow-left'></use>
+               </svg>
+             </button>
+
+             <div class='products-slider swiper-container'>
+               <ul class='swiper-wrapper'>
+                 <li class='swiper-slide'>
+                   <a href='#' class='product-card'>
+                     <div class='product-card__image'>
+                       <picture>
+                         <source type='image/webp' srcset='img/products/img.webp'>
+                         <img loading='lazy' width='73' height='233' src='img/products/img.png' alt='image'>
+                       </picture>
+                     </div>
+                     <div class='product-card__descr'>
+                       <h3 class='product-card__name'>Sunflower Oil (1 L)</h3>
+                       <span class='product-card__info'>1 Litre / 2 Litre / 5 Litre</span>
+                     </div>
+                     <span class='product-card__more read-more'>
+                       Details
+                       <svg width='10' height='10'>
+                         <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                       </svg>
+                     </span>
+                   </a>
+                 </li>
+                 <li class='swiper-slide'>
+                   <a href='#' class='product-card'>
+                     <div class='product-card__image'>
+                       <picture>
+                         <source type='image/webp' srcset='img/products/img2.webp'>
+                         <img loading='lazy' width='127' height='233' src='img/products/img2.png' alt='image'>
+                       </picture>
+                     </div>
+                     <div class='product-card__descr'>
+                       <h3 class='product-card__name'>Hight Oleic Sunflower Oil (1 L)</h3>
+                       <span class='product-card__info'>1 Litre / 2 Litre / 5 Litre</span>
+                     </div>
+                     <span class='product-card__more read-more'>
+                       Details
+                       <svg width='10' height='10'>
+                         <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                       </svg>
+                     </span>
+                   </a>
+                 </li>
+                 <li class='swiper-slide'>
+                   <a href='#' class='product-card'>
+                     <div class='product-card__image'>
+                       <picture>
+                         <source type='image/webp' srcset='img/products/img3.webp'>
+                         <img loading='lazy' width='233' height='233' src='img/products/img3.png' alt='image'>
+                       </picture>
+                     </div>
+                     <div class='product-card__descr'>
+                       <h3 class='product-card__name'>Vegan Mayo (430 G)</h3>
+                       <span class='product-card__info'>430 Grams / 1 Litre</span>
+                     </div>
+                     <span class='product-card__more read-more'>
+                       Details
+                       <svg width='10' height='10'>
+                         <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                       </svg>
+                     </span>
+                   </a>
+                 </li>
+               </ul>
+             </div>
+
+             <button class='slider-button cards-slider__next'>
+               <svg width='15' height='15'>
+                 <use href='img/sprite/sprite.svg#arrow-right'></use>
+               </svg>
+             </button>
+
+             <span class='cards-slider__pagination swiper-pagination'></span>
+           </div>
+
+           <a href='#' class='main-button our-section__btn'>
+             All Products
+             <svg width='10' height='10'>
+               <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+             </svg>
+           </a>
+
+         </div>
+      </div>
+   </section>
+    <section class='contact-section padding-mode'>
+      <div class="contact-section__row" style='background-image: url(img/contactsBg.png);'>
+        <div class="container">
+          <div class="main-form contact-section__form">
+            <div class="main-form__top">
+              <h3 class="main-subtitle">
+                Feedback
+              </h3>
+
+              <span class='main-form__text'>
+                Leave your details and you will be contacted shortly
+              </span>
+            </div>
+
+            <form class='main-form__form'>
+              <label for="name">
+                <span>
+                  Your name
+                </span>
+                <input type="text" name='name' id='name'>
+              </label>
+              <label for="phone">
+                <span>
+                  Your phone
+                </span>
+                <input type="tel" name='phone' id='phone'>
+              </label>
+              <label for="question">
+                <span>
+                  Your question
+                </span>
+                <textarea name="question" id="question" placeholder='Enter your question'></textarea>
+              </label>
+
+              <button class='main-button'>
+                Send Message
+                <svg width='10' height='10'>
+                  <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                </svg>
+              </button>
+            </form>
+
+            <span class='main-form__text'>
+              We adhere to the privacy policy and do not disclose your information to anyone.
+            </span>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src='js/main.js'></script>
+
+</html>
+
+

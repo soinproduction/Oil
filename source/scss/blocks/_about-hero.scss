@@ -1,0 +1,50 @@
+.about-hero {
+  padding-top: clamp(60px, 10.417vw, 140px);
+  padding-bottom: 60px;
+  min-height: Min(54.032vw, 670px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &::before {
+    pointer-events: none;
+    z-index: -1;
+    top: -10px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    position: absolute;
+    content: '';
+    background: linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0.43) 100%);
+  }
+
+  &__box {
+    gap: 30px;
+    max-width: 620px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include small-tablet {
+      max-width: 414px;
+    }
+
+    @include mobile {
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__btn {
+    max-width: 220px;
+
+    @include ios {
+      max-width: 100%;
+    }
+  }
+
+}

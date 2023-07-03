@@ -1,0 +1,12 @@
+.main-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(20px, 2.016vw, 25px);
+  text-align: center;
+
+  p {
+    max-width: 990px;
+    color: rgba(var(--cl-e),1.0);
+  }
+}

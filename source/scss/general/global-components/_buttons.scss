@@ -1,0 +1,91 @@
+.main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  height: clamp(50px, 7.813vw, 64px);
+  max-width: 100%;
+  width: 100%;
+
+  border-radius: 35px;
+  background: rgba(var(--cl-c),1.0);
+
+  color: rgba(var(--cl-a),1.0);
+  font-size: 16px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+
+
+  svg {
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: rgba(var(--bg-a),1.0);
+    border: 1px solid var(--br-b);
+    color: rgba(var(--cl-c),1.0);
+  }
+
+  &.transparent {
+    background-color: rgba(var(--bg-a),1.0);
+    border: 1px solid var(--br-b);
+    color: rgba(var(--cl-c),1.0);
+
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: rgba(var(--cl-c),1.0);
+      color: rgba(var(--cl-a),1.0);
+    }
+  }
+}
+
+.slider-button {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(var(--bg-c),1.0);
+  color: rgba(var(--cl-a),1.0);
+  svg {
+    flex-shrink: 0;
+    fill: currentColor;
+  }
+
+  border: 1px solid transparent;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    background-color: rgba(var(--bg-a),1.0);
+    border: 1px solid var(--br-b);
+    color: rgba(var(--cl-c),1.0);
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  &-bullet {
+    width: 8px;
+    height: 8px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(var(--bg-e),1.0);
+
+    &-active {
+      background-color: rgba(var(--bg-c),1.0);
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.news-section {
+  background-color: rgba(var(--bg-m),1.0);
+
+  &__title {
+    line-height: normal;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(30px, 6.944vw, 40px);
+    padding: clamp(40px, 5.208vw, 60px) 0;
+  }
+
+  &__list {
+    --size: 300px;
+    max-width: 1060px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--size), 1fr));
+    gap: 11px;
+
+    @include tablet {
+      --size: 250px;
+    }
+  }
+
+  &__btn {
+    max-width: 220px;
+
+    @include ios {
+      max-width: 100%;
+    }
+  }
+}
+
+.single-news {
+
+  &__image {
+    display: flex;
+    width: 100vw;
+    height: Min(37.903vw, 470px);
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      content: '';
+      background-color: rgba(var(--bg-d),0.60);
+    }
+
+    @include tablet {
+      height: Min(37.500vw, 450px);
+    }
+
+    picture, img {
+      width: 100%;
+      height: 100%;
+      height: auto;
+    }
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, 2.419vw, 30px);
+    grid-column: 1/-1;
+    margin-bottom: clamp(15px, 1.956vw, 30px);
+  }
+
+  &__title {
+    line-height: 110%;
+  }
+
+  &__article {
+    padding-top: clamp(30px, 3.226vw, 40px);
+    padding-bottom: clamp(60px, 80px, 80px);
+    max-width: 835px;
+    width: 100%;
+    margin: 0 auto;
+    --gap: 10px;
+    --text-margin: clamp(15px, 1.956vw, 30px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap);
+
+    @include mobile {
+      --gap: 15px;
+    }
+
+    picture,
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  p, .big {
+    grid-column: 1/-1;
+  }
+
+  p {
+    margin: var(--text-margin) 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  p + p {
+    margin-top: 0px;
+  }
+}

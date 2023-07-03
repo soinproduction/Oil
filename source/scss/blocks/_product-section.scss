@@ -1,0 +1,141 @@
+.product {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  @include tablet {
+    background-position: top;
+    background-size: contain;
+  }
+
+  // top: 40%;
+  &::before {
+    left: 0;
+    right: 0;
+    height: 20%;
+    bottom: 0;
+    transform: scaleY(-1);
+    background: linear-gradient(to bottom, rgba(var(--bg-a),1.0) 0%, transparent 100%);
+    position: absolute;
+    content: '';
+    pointer-events: none;
+  }
+
+  .product-sliders {
+    grid-column: 1;
+    grid-row: 1 / 4;
+
+    @include tablet {
+      grid-row: 2 / span 2;
+      grid-column: initial;
+      order: 1;
+    }
+  }
+
+  &__inner {
+    padding-top: clamp(40px, 4.688vw, 60px);
+    padding-bottom: clamp(60px, 6.25vw, 80px);
+
+    display: grid;
+    grid-template-columns: auto 50%;
+    align-items: flex-start;
+    gap: 30px clamp(20px, 3.906vw, 50px);
+
+    @include tablet {
+      grid-template-columns: 50% 1fr;
+    }
+
+    @include small-tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    width: 100%;
+
+    @include tablet {
+      order: 1;
+    }
+  }
+
+  &__info-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+
+  &__info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__info-legend {
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--br-a);
+    color: rgba(var(--cl-c),1.0);
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__info-descr {
+    color: rgba(var(--cl-d),1.0);
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      color: rgba(var(--bg-e),1.0);
+      font-size: 14px;
+    }
+
+    @include tablet {
+      grid-column: 1/ -1;
+    }
+
+  }
+
+  &__buttons {
+    width: 100%;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .main-button {
+      flex-wrap: wrap;
+      padding: 0 10px;
+
+      @include for-tablet {
+        padding: 0 clamp(20px, 3.906vw, 50px);
+        width: fit-content;
+      }
+    }
+
+    @include tablet {
+      order: 3;
+      grid-column: 2;
+    }
+
+    @include ios {
+      flex-direction: column;
+    }
+  }
+}

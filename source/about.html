@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang='En'>
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="products.html">about us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class='about-hero' style='background-image: url(img/aboutBg.png);'>
+      <div class="container">
+        <div class="about-hero__box">
+          <h1 class="main-title">
+            Premium Oils for Culinary Excellence
+          </h1>
+
+          <p>
+            FlavOil is a specialist edible oil company. Our goal is simply to provide the professional chef and home kitchen user the very best quality oils and fats, all at unbeatable prices. Our wealth of experience in the industry allows us to do just that.
+          </p>
+
+          <a href="products.html" class="main-button about-hero__btn">
+            Our Products
+            <svg width='10' height='10'>
+              <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class='about-description'>
+      <div class='container'>
+        <article class='about-description__box'>
+
+
+          <!-- разметка для локального видео и data-local-video  для инициализации -->
+          <!-- сейчас будет просто плеер, так как видео нет в корне -->
+          <div style="display:none;" id="local">
+            <video class="lg-video-object lg-html5" controls preload="none">
+                <source src="videos/video1.mp4" type="video/mp4">
+                 Your browser does not support HTML5 video.
+            </video>
+          </div>
+
+          <div class='video-box' data-local-video>
+            <div class="video-box__inner" data-html="#local">
+              <picture>
+                <source type='image/webp' srcset='img/video-prev2.webp'>
+                <img loading='lazy' width='560' height='380' src='img/video-prev2.png' alt='image'>
+              </picture>
+            </div>
+          </div>
+          <!-- разметка для локального видео и data-local-video  для инициализации -->
+
+          <h2 class='main-title'>
+            <span><i>FlavOil:</i> Unparalleled Expertise</span>
+          </h2>
+
+          <p>
+            Our technical expertise and unique scientific approach allows us to control every aspect of the oil production. From the initial planting of the seeds right up to the packaged products you enjoy in your kitchen, be it a professional or home kitchen. Our expertise is unmatched and allows us to manufacture a uniquely wide range of oil based products to meet every possible need.
+            <br><br>
+            We take enormous pride in our wide range of products, and this is directly reflected in the superb relationships we enjoy with our customers, be they major wholesalers or small family run businesses. We consider our customers part of the FlavOil family and this is reflected in our award winning customer service, as we realise our customers make us what we are.
+          </p>
+
+        </article>
+      </div>
+    </section>
+
+    <section class='advantage-section padding-mode'>
+      <div class='advantage-section__wrapper' style='background-image: url(img/advantage.png);'>
+        <div class='container'>
+          <div class='main-top'>
+            <h2 class='main-subtitle advantage-section__title'>
+              Advantages
+            </h2>
+            <p>
+              FlavOil produce highest quality products for the professional kitchen. Single source, pure ingredients manufactured to Global Food Standard specifications, in sensible, environmentally sound catering packs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class='container'>
+        <ul class='advantage-section__list'>
+          <li class='advantage-section__item'>
+            <svg width='62' height='62'>
+              <use href='img/sprite/sprite.svg#ecology'></use>
+            </svg>
+            <span class='advantage-section__subtitle'>
+              Enviroment
+            </span>
+            <p>
+              Flavoil cares for the environment because it is entirely plant based, 100% sustainable and can considerably reduce waste oil or eliminates it altogether. The oil is available in a revolutionary Bag-in-box that uses 80% less plastic than regular packaging.
+            </p>
+          </li>
+          <li class='advantage-section__item'>
+            <svg width='62' height='62'>
+              <use href='img/sprite/sprite.svg#quality'></use>
+            </svg>
+            <span class='advantage-section__subtitle'>
+              Quality
+            </span>
+            <p>
+              Products are made from highest quality natural high oleic seeds. FlavOil control the whole process in compliance with the exacting ISO 22000 certification scheme and our oil is delivered fresh direct to our customers in sealed containers. Each box carries a batch number and date of manufacture.
+            </p>
+          </li>
+          <li class='advantage-section__item'>
+            <svg width='62' height='62'>
+              <use href='img/sprite/sprite.svg#charity'></use>
+            </svg>
+            <span class='advantage-section__subtitle'>
+              Health
+            </span>
+            <p>
+              FlavOil have created the healthiest all-purpose oil commercially available. Guaranteed to be over 80% monounsaturated fat. PUFAs and Sat Fats are kept to a minimum. Less than any other oil. MUFAs are proven to reduce LDL Cholesterol and yet HOSO is also cholesterol free and a good source of Vitamin E.
+            </p>
+          </li>
+          <li class='advantage-section__item'>
+            <svg width='62' height='62'>
+              <use href='img/sprite/sprite.svg#feedback'></use>
+            </svg>
+            <span class='advantage-section__subtitle'>
+              Performance
+            </span>
+            <p>
+              Flavoil's HOSO has outperformed every other commercial oil in independent tests. Our Monounsaturated oil resists breakdown and will outlast cheap commodity oils. It has no oily taste. Does not smell and produces a fine crisp finish that lasts. It is economical in use and reduces waste and downtime.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class='contact-section padding-mode'>
+      <div class="contact-section__row" style='background-image: url(img/contactsBg.png);'>
+        <div class="container">
+          <div class="main-form contact-section__form">
+            <div class="main-form__top">
+              <h3 class="main-subtitle">
+                Feedback
+              </h3>
+
+              <span class='main-form__text'>
+                Leave your details and you will be contacted shortly
+              </span>
+            </div>
+
+            <form class='main-form__form'>
+              <label for="name">
+                <span>
+                  Your name
+                </span>
+                <input type="text" name='name' id='name'>
+              </label>
+              <label for="phone">
+                <span>
+                  Your phone
+                </span>
+                <input type="tel" name='phone' id='phone'>
+              </label>
+              <label for="question">
+                <span>
+                  Your question
+                </span>
+                <textarea name="question" id="question" placeholder='Enter your question'></textarea>
+              </label>
+
+              <button class='main-button'>
+                Send Message
+                <svg width='10' height='10'>
+                  <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                </svg>
+              </button>
+            </form>
+
+            <span class='main-form__text'>
+              We adhere to the privacy policy and do not disclose your information to anyone.
+            </span>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src='js/main.js'></script>
+
+</html>

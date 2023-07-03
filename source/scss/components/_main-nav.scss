@@ -1,0 +1,53 @@
+.main-nav {
+  display: flex;
+
+  &__list {
+    display: flex;
+    gap: clamp(15px, 3.226vw, 40px);
+  }
+
+  &__link {
+    color: rgba(var(--cl-d),1.0);
+    font-size: 16px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      left: 0;
+      right: 0;
+      height: 2px;
+      @include psevdo;
+      background-color: currentColor;
+      bottom: calc(clamp(13px, 1.21vw, 15px) * -1);
+      transform: translateY(50%);
+      z-index: 1;
+      opacity: 0;
+    }
+
+    &.active {
+      color: rgba(var(--cl-c),1.0);
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      color: rgba(var(--cl-c),1.0);
+    }
+  }
+
+  @include for-small-tablet {
+    .contact-list,
+    .main-contacts {
+      display: none;
+    }
+  }
+
+}

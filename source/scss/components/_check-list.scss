@@ -1,0 +1,33 @@
+.check-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px 30px;
+
+  &__item {
+    --size: clamp(16px, 2.778vw, 22px);
+    color: rgba(var(--cl-d),1.0);
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-left: calc(var(--size) + 6px);
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      width: var(--size);
+      height: var(--size);
+      position: absolute;
+      content: '';
+      left: 0;
+      background-image: var(--check-icon);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      border-radius: 50%;
+    }
+  }
+}

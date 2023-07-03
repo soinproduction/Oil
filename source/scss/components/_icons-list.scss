@@ -1,0 +1,95 @@
+.icons-list {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  display: grid;
+  padding: clamp(15px, 2.097vw, 26px) clamp(20px, 3.226vw, 40px);
+  z-index: 1;
+
+  background: rgba(var(--bg-a),1.0);
+  border: 1px solid  var(--br-d);
+  border-radius: 10px;
+  transform: translateY(50%);
+
+  --gap: clamp(30px,6.452vw, 80px);
+  gap: 30px var(--gap);
+  grid-template-columns: repeat(4, auto);
+
+  @include tablet {
+    grid-template-columns: repeat(4, 1fr);
+    --gap: calc( Min(6.452vw, 80px) / 2);
+  }
+
+  @include mobile {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    display: grid;
+    gap: 30px 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  svg {
+    width: clamp(35px, 3.71vw, 46px);
+    max-width: 100%;
+    height: auto;
+
+    fill: transparent;
+    grid-column: 1;
+    grid-row: 1/span 2;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(14px, 1.29vw, 16px);
+    line-height: normal;
+    font-family: var(--font-family);
+    color: rgba(var(--cl-d),1.0);
+  }
+
+  &__value {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 1.129vw, 14px);
+    line-height: normal;
+    font-family: var(--font-family);
+    color: rgba(var(--cl-e),1.0);
+  }
+
+  &__item {
+    display: grid;
+    align-items: center;
+    position: relative;
+    gap: 0 12px;
+    grid-template-columns: auto 1fr;
+
+    &:not(:first-child) {
+      &::before {
+        top: 5px;
+        bottom: 5px;
+        width: 1px;
+        @include psevdo;
+        transform: translateX(-50%);
+        background-color: var(--br-e);
+        left: calc((var(--gap) / 2) * -1);
+
+        @include tablet {
+          opacity: .5;
+        }
+
+        @include small-tablet {
+          content: none;
+        }
+      }
+    }
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang='En'>
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="/">home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="contacts.html">contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class='contact-section'>
+      <div class="contact-section__row">
+        <div class="container">
+          <div class="contact-section__box">
+            <div class='main-top'>
+              <h2 class='main-subtitle contact-section__title'>
+                We’d love to hear from you
+              </h2>
+              <p>
+                We have offices and teams all around the world
+              </p>
+            </div>
+
+            <ul class="contact-section__list">
+              <li class="contact-section__item" style='background-image: url(img/london.png);'>
+                <h3 class="contact-section__city">
+                  <img width='50' height='50' src="img/flag.svg" alt="flag">
+                  United Kingdom, London
+                </h3>
+
+                <ul class="contact-list">
+                  <li class="contact-list__item">
+                    <a href="#">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#geo'></use>
+                      </svg>
+                      128 City Road, London EC1V 2NX United Kingdom
+                    </a>
+                  </li>
+                  <li class="contact-list__item">
+                    <a href="tel:+4402071382077">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#phone'></use>
+                      </svg>
+                      +44 (0) 207 1382 077
+                    </a>
+                  </li>
+                  <li class="contact-list__item">
+                    <a href="mailto:info@flavoil.co.uk">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#email'></use>
+                      </svg>
+                      info@flavoil.co.uk
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="main-contacts main-contacts--mode">
+                  <ul class="main-contacts__list">
+
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/instagram.svg" alt="instagram">
+                      </a>
+                    </li>
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/whatsapp.svg" alt="whatsapp">
+                      </a>
+                    </li>
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/facebook.svg" alt="facebook">
+                      </a>
+                    </li>
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/twitter.svg" alt="twitter">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="contact-section__item" style='background-image: url(img/poland.png);'>
+                <h3 class="contact-section__city">
+                  <img width='50' height='50' src="img/flag2.svg" alt="flag">
+                  Poland, Kraków
+                </h3>
+
+                <ul class="contact-list">
+                  <li class="contact-list__item">
+                    <a href="#">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#geo'></use>
+                      </svg>
+                      Vier Group Sp. z o.o.ul. Świętokrzyska 12/31130-015 Kraków, Polska
+                    </a>
+                  </li>
+                  <li class="contact-list__item">
+                    <a href="tel:+4402071382077">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#phone'></use>
+                      </svg>
+                      +44 (0) 207 1382 077
+                    </a>
+                  </li>
+                  <li class="contact-list__item">
+                    <a href="mailto:info@flavoil.co.uk">
+                      <svg width='16' height='16'>
+                        <use href='img/sprite/sprite.svg#email'></use>
+                      </svg>
+                      info@flavoil.co.uk
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="main-contacts main-contacts--mode">
+                  <ul class="main-contacts__list">
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/instagram.svg" alt="instagram">
+                      </a>
+                    </li>
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/whatsapp.svg" alt="whatsapp">
+                      </a>
+                    </li>
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/facebook.svg" alt="facebook">
+                      </a>
+                    </li>
+                    <li class="main-contacts__item">
+                      <a href="#" class="main-contacts__link">
+                        <img width='33' height='33' src="img/sprite/twitter.svg" alt="twitter">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-section__row" style='background-image: url(img/contactsBg.png);'>
+        <div class="container">
+          <div class="main-form contact-section__form">
+            <div class="main-form__top">
+              <h3 class="main-subtitle">
+                Feedback
+              </h3>
+
+              <span class='main-form__text'>
+                Leave your details and you will be contacted shortly
+              </span>
+            </div>
+
+            <form class='main-form__form'>
+              <label for="name">
+                <span>
+                  Your name
+                </span>
+                <input type="text" name='name' id='name'>
+              </label>
+              <label for="phone">
+                <span>
+                  Your phone
+                </span>
+                <input type="tel" name='phone' id='phone'>
+              </label>
+              <label for="question">
+                <span>
+                  Your question
+                </span>
+                <textarea name="question" id="question" placeholder='Enter your question'></textarea>
+              </label>
+
+              <button class='main-button'>
+                Send Message
+                <svg width='10' height='10'>
+                  <use href='img/sprite/sprite.svg#arrow-diagonal'></use>
+                </svg>
+              </button>
+            </form>
+
+            <span class='main-form__text'>
+              We adhere to the privacy policy and do not disclose your information to anyone.
+            </span>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src='js/main.js'></script>
+
+</html>
+
+

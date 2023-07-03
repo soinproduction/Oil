@@ -1,0 +1,123 @@
+.contact-section {
+  position: relative;
+
+  --pb: clamp(20px, 4.839vw, 60px);
+  --pt: clamp(30px, 3.226vw, 40px);
+
+  &.padding-mode {
+    --pb: clamp(30px, 5.484vw, 68px);
+    --pt: clamp(60px, 5.968vw, 74px);
+  }
+
+
+  &::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(var(--bg-a),1.0) 0%, transparent 100%);
+    position: absolute;
+    content: '';
+    pointer-events: none;
+  }
+
+  &__row {
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(var(--bg-a),1.0);
+    padding: var(--pt) 0 var(--pb);
+
+    & + & {
+      padding: clamp(30px, 3.226vw, 40px) 0 clamp(60px, 5.968vw, 74px);
+    }
+  }
+
+  &__form {
+    max-width: clamp(345px, 44.98vw, 440px);
+    margin: 0 auto;
+  }
+
+  &__title {
+    line-height: normal;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 4.839vw, 60px);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    gap: 15px;
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__item {
+    height: 100%;
+    padding: 34px Min(4.348vw, 30px) 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background-color: rgba(var(--bg-b),0.8);
+      display: block;
+    }
+
+    .main-contacts {
+      margin-top: calc(25px + clamp(5px, 4.435vw, 55px));
+      flex-grow: 1;
+
+      @include mobile {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__city {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    color: rgba(var(--cl-a),1.0);
+    font-size: clamp(22px, 4vw, 32px);
+    font-family: var(--font-family2);
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+    @include small-tablet {
+      font-size: clamp(22px, 8vw, 32px);
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      border-radius: 50%;
+    }
+  }
+}
+

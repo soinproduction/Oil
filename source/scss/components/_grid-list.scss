@@ -1,0 +1,11 @@
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 1060px;
+  width: 100%;
+
+  @include mobile {
+    grid-template-columns: repeat(auto-fill, minmax(clamp(150px, 40vw, 250px), 1fr));
+  }
+}

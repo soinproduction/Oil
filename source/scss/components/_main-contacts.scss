@@ -1,0 +1,47 @@
+.main-contacts {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  &__label {
+    color: rgba(var(--cl-a),1.0);
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    gap: 4px;
+
+    img {
+      display: flex;
+    }
+  }
+
+  &--mode {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+
+    .main-contacts {
+      &__list {
+        gap: 8px;
+      }
+
+      &__label {
+        font-size: clamp(14px, 2.431vw, 18px);
+      }
+    }
+
+
+  }
+
+
+}

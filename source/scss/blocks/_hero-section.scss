@@ -1,0 +1,58 @@
+.hero-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__box {
+    padding-top: clamp(60px, 6.452vw, 80px);
+    padding-bottom: calc(var(--icon-list) / 2 + 30px);
+
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr auto;
+    gap: clamp(40px, 5.242vw, 65px) Min(11.29vw, 140px);
+
+    @include tablet {
+      gap: clamp(40px, 5.242vw, 65px) calc(Min(11.29vw, 140px) / 1.2);
+    }
+
+    @include small-tablet {
+      grid-template-columns: 100%;
+      max-width: 550px;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(30px, 2.823vw, 35px);
+
+    @include small-tablet {
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &__slider {
+    transform: translateX(-20px);
+
+    @include small-tablet {
+      transform: translateX(0px);
+    }
+  }
+
+  &__btn {
+    max-width: 220px;
+
+    @include ios {
+      max-width: 100%;
+    }
+  }
+
+  &__pagination {
+    grid-column: 1/-1;
+  }
+}
